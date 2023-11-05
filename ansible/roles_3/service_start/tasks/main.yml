@@ -1,0 +1,6 @@
+---
+- name: httpd service stars
+  service:
+    name: httpd
+    state: started
+    enabled: yes

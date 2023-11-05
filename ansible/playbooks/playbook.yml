@@ -1,0 +1,9 @@
+---
+- name: tasks
+  hosts: all
+  become: yes
+  roles:
+    - nginx_install
+    - git_download 
+    - run_project
+    - configure_nginx

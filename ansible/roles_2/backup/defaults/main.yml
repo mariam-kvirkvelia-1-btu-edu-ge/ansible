@@ -1,0 +1,3 @@
+path: /opt/backup
+owner: upload
+permissions: "664"

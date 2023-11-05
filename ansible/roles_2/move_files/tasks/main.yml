@@ -1,0 +1,7 @@
+- name: move /etc/localtime and /etc/hosts
+  copy:
+    src: "{{ item }}"
+    dest: "{{ path }}/{{ item | basename }}"
+  with_items:
+    - /etc/localtime
+    - /etc/hosts

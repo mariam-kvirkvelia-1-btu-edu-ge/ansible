@@ -1,0 +1,21 @@
+---
+- name: Install Nginx
+  yum:
+    name: nginx
+    state: present
+
+- name: Install Node.js
+  yum:
+    name: nodejs
+    state: present
+  become: yes
+
+- name: Install PM2 globally
+  command: npm install -g pm2
+  become: yes
+
+- name: Install Git
+  yum:
+    name: git
+    state: present
+  become: yes

@@ -1,0 +1,7 @@
+---
+- name: Clone Node.js Hello World repository from GitHub
+  git:
+    repo: https://github.com/fropa/nodejs-hello.git
+    dest: /opt/nodejs
+  become: yes
+

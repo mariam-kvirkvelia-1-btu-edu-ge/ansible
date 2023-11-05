@@ -1,0 +1,10 @@
+---
+- name: httpd, php, mlocate, vim install
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - httpd
+    - php
+    - mlocate
+    - vim

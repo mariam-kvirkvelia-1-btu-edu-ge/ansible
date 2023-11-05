@@ -1,0 +1,9 @@
+---
+- name: Servers Configure
+  hosts: all
+  become: true
+  roles:
+    - install_package
+    - create_user
+    - create_file
+    - service_start

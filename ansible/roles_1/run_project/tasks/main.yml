@@ -1,0 +1,9 @@
+---
+- name: Start the application with PM2
+  command: /usr/local/bin/pm2 start {{ app_destination }} --name "nodejs-hello" --watch -- 3000
+
+
+
+
+
+

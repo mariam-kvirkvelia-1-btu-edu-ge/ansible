@@ -1,0 +1,6 @@
+- name: Create backup directory
+  file:
+    path: "{{ path }}"
+    state: directory
+    owner: "{{ owner }}"
+    mode: "{{ permissions }}"

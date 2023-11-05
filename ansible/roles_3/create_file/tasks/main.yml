@@ -1,0 +1,5 @@
+---
+- name: Write current machine IP Address 
+  lineinfile:
+    path: "{{ path }}"
+    line: "IP Address of this server is = {{ ansible_default_ipv4.address }}"
